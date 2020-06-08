@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/ColorPaletteGenerator/static/css/main.a2b9ddb9.chunk.css",
-    "main.js": "/ColorPaletteGenerator/static/js/main.507a9e16.chunk.js",
-    "main.js.map": "/ColorPaletteGenerator/static/js/main.507a9e16.chunk.js.map",
+    "main.css": "/ColorPaletteGenerator/static/css/main.450260e5.chunk.css",
+    "main.js": "/ColorPaletteGenerator/static/js/main.cb22fce4.chunk.js",
+    "main.js.map": "/ColorPaletteGenerator/static/js/main.cb22fce4.chunk.js.map",
     "runtime-main.js": "/ColorPaletteGenerator/static/js/runtime-main.9f671192.js",
     "runtime-main.js.map": "/ColorPaletteGenerator/static/js/runtime-main.9f671192.js.map",
-    "static/js/2.4bbdb65b.chunk.js": "/ColorPaletteGenerator/static/js/2.4bbdb65b.chunk.js",
-    "static/js/2.4bbdb65b.chunk.js.map": "/ColorPaletteGenerator/static/js/2.4bbdb65b.chunk.js.map",
+    "static/css/2.2ce93ba3.chunk.css": "/ColorPaletteGenerator/static/css/2.2ce93ba3.chunk.css",
+    "static/js/2.acfc36ab.chunk.js": "/ColorPaletteGenerator/static/js/2.acfc36ab.chunk.js",
+    "static/js/2.acfc36ab.chunk.js.map": "/ColorPaletteGenerator/static/js/2.acfc36ab.chunk.js.map",
     "index.html": "/ColorPaletteGenerator/index.html",
-    "precache-manifest.5e80f62b01014f3835e6308277909fc7.js": "/ColorPaletteGenerator/precache-manifest.5e80f62b01014f3835e6308277909fc7.js",
+    "precache-manifest.19275a0862bea39891d7c80382a18d38.js": "/ColorPaletteGenerator/precache-manifest.19275a0862bea39891d7c80382a18d38.js",
     "service-worker.js": "/ColorPaletteGenerator/service-worker.js",
-    "static/css/main.a2b9ddb9.chunk.css.map": "/ColorPaletteGenerator/static/css/main.a2b9ddb9.chunk.css.map",
-    "static/js/2.4bbdb65b.chunk.js.LICENSE.txt": "/ColorPaletteGenerator/static/js/2.4bbdb65b.chunk.js.LICENSE.txt"
+    "static/css/2.2ce93ba3.chunk.css.map": "/ColorPaletteGenerator/static/css/2.2ce93ba3.chunk.css.map",
+    "static/css/main.450260e5.chunk.css.map": "/ColorPaletteGenerator/static/css/main.450260e5.chunk.css.map",
+    "static/js/2.acfc36ab.chunk.js.LICENSE.txt": "/ColorPaletteGenerator/static/js/2.acfc36ab.chunk.js.LICENSE.txt",
+    "static/media/UploadIcon.svg": "/ColorPaletteGenerator/static/media/UploadIcon.1cedb6e9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9f671192.js",
-    "static/js/2.4bbdb65b.chunk.js",
-    "static/css/main.a2b9ddb9.chunk.css",
-    "static/js/main.507a9e16.chunk.js"
+    "static/css/2.2ce93ba3.chunk.css",
+    "static/js/2.acfc36ab.chunk.js",
+    "static/css/main.450260e5.chunk.css",
+    "static/js/main.cb22fce4.chunk.js"
   ]
 }

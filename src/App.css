@@ -3,7 +3,7 @@
 .App {
   /* text-align: center; */
   display: grid;
-  grid-template-rows: 15% 90%;
+  grid-template-rows: 10% 90%;
   font-family: 'Piedra', cursive;
 
 }
@@ -30,9 +30,3 @@ header > h1 {
   float: left;
 }
 
-
-.logoimg{
-  float: right;
-  height: 100%;
- 
-}

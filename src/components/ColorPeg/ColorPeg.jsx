@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ColorPeg.css'
 import reactCSS from 'reactcss'
-import ReactDOM from 'react-dom'
+
 class ColorPeg extends Component{
     
     render(){
@@ -18,8 +18,8 @@ class ColorPeg extends Component{
                 },
               })
         return (
-            <div className='ColorPeg' style={styles.card} >
-                <p className='hide'>
+            <div className='ColorPeg' style={styles.card} id={this.props.id} >
+                <p className='hideP'>
                     {this.props.color}
                 </p>
             </div>

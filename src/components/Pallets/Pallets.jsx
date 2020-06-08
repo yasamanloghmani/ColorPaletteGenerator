@@ -67,7 +67,7 @@ class Pallets extends Component{
                                 </ColorPeg>
                             })}
                         </div>
-                        <ImageUploader
+                        {/* <ImageUploader
                         className='uploader'
                 withIcon={true}
                 buttonText='Choose images'
@@ -75,7 +75,7 @@ class Pallets extends Component{
                 imgExtension={['.jpg', '.gif', '.png', '.gif']}
                 maxFileSize={5242880}
             />
-            <img src={this.state.pictures}></img>
+            <img src={this.state.pictures}></img> */}
 
 
 

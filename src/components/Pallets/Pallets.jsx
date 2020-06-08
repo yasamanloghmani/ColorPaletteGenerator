@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ColorPeg from '../ColorPeg/ColorPeg'
-import { SketchPicker, SwatchesPicker } from 'react-color';
+import { SketchPicker, SwatchesPicker, MaterialPicker } from 'react-color';
 import './Pallets.css'
 
 class Pallets extends Component{
@@ -46,7 +46,16 @@ class Pallets extends Component{
                     <SketchPicker
                             color={ this.state.background }
                             onChange={ this.handleChange }
-                    />  
+                            width='60%'
+
+                    /> 
+                    <div className='marg'>
+                    <MaterialPicker color={ this.state.background }
+                            onChange={ this.handleChange }
+                            
+                    ></MaterialPicker> 
+                    </div>
+                    
                     </section>
                 </main>
             </div>

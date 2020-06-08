@@ -1,7 +1,8 @@
 .ColorPeg {
     /* width: 100px; */
     height: 200px;
-    
+    border-radius: 3px;
+    margin:2px
     
 }
 

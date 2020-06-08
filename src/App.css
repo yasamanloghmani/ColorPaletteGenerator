@@ -3,11 +3,21 @@
 .App {
   text-align: center;
   display: grid;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 15% 90%;
+  font-family: 'Piedra', cursive;
 
 }
 
 main{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+header > h1 {
+  font-size: 60px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#e7978f, #FBAA63,#d889ad, #b981cf, #9695CC, #5db6c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }

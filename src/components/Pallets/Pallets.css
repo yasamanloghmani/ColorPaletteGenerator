@@ -1,0 +1,9 @@
+.Pallets{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: start;
+    align-items: center;
+    column-gap: 0px!important;
+    width: 40%;
+}

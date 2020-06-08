@@ -1,7 +1,7 @@
 
 
 .App {
-  text-align: center;
+  /* text-align: center; */
   display: grid;
   grid-template-rows: 15% 90%;
   font-family: 'Piedra', cursive;
@@ -13,11 +13,26 @@ main{
   grid-template-columns: 1fr 2fr 1fr;
 }
 
+header{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 10px, rgba(0, 0, 0, 0.16) 0px 2px 5px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 10px;
 
+}
 header > h1 {
+  
   font-size: 60px;
-  font-weight: bold;
   background: -webkit-linear-gradient(#e8b6f1,#f34795, #7ef0e1, #5db6c9);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
+  -webkit-text-fill-color: transparent;
+  margin:10px;
+  float: left;
+}
+
+
+.logoimg{
+  float: right;
+  height: 100%;
+ 
 }

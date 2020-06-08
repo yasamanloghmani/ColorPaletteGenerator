@@ -14,6 +14,7 @@
     "react-color-extractor": "^1.1.2",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
+    "react-eyedropper": "0.0.10",
     "react-images-upload": "^1.2.8",
     "react-palette": "^1.0.2",
     "react-scripts": "3.4.1",

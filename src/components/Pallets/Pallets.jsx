@@ -3,13 +3,16 @@ import ColorPeg from '../ColorPeg/ColorPeg'
 import { SketchPicker, SwatchesPicker, MaterialPicker } from 'react-color';
 import './Pallets.css'
 import ImageUploader from 'react-images-upload';
-import { ColorExtractor } from 'react-color-extractor'
+
+
+
 
 
 class Pallets extends Component{
     constructor(props) {
         super(props);
         this.state = {
+           
              pictures: '',
              background: '#f35c87',
         colors : ['#f35c87', '#20639b', '#3caea3', '#f6d55c', '#ed553b', '#17bfd1'],
@@ -69,6 +72,10 @@ class Pallets extends Component{
                 maxFileSize={5242880}
             />
             <img src={this.state.pictures}></img>
+
+
+
+
                     </div>
                     
                     <section >

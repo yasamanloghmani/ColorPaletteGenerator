@@ -17,6 +17,7 @@ class App extends Component {
           <h1>
             cute colors
           </h1>
+          <img className='logoimg' src='https://i.pinimg.com/originals/12/77/06/127706c539de1269e564738759fd7a44.jpg'></img>
         </header>
         
       <Pallets/>

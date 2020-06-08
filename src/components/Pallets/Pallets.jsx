@@ -43,6 +43,10 @@ class Pallets extends Component{
                             color={ this.state.background }
                             onChangeComplete={ this.handleChangeComplete }
                     />
+                     <SwatchesPicker color={ this.state.background }
+                            onChangeComplete={ this.handleChangeComplete }
+                            
+                        ></SwatchesPicker>
                         
                     </section>
                 </main>

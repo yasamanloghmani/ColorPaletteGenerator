@@ -15,9 +15,13 @@ class Pallets extends Component{
            
              pictures: '',
              background: '#f35c87',
-        colors : ['#f35c87', '#20639b', '#3caea3', '#f6d55c', '#ed553b', '#17bfd1'],
-        id : 0
+        colors : ['#845EC2', '#845EC2', '#FF9671', '#FFC75F', '#B39CD0', '#00C9A7'],
+        id : 0,
+        p1 : ['#845EC2', '#EDC0FF','#7652B4', '#08004F' ],
+        p2 : ['#356275', '#98AFBA','#657A85', '#6E546C' ],
+        p3 : ['#8F4454', '#7E4564','#66486C', '#4E4A6C' ],
              };
+             
         this.onDrop = this.onDrop.bind(this);
     }
 
@@ -94,6 +98,28 @@ class Pallets extends Component{
                     
                     </section>
                 </main>
+                <div>
+                    <h1>Some famouse Pallets</h1>
+                    <div className='Pallets' onClick={this.handlePickColor}>
+                            {this.state.p1.map((color, index) => {
+                                return <ColorPeg color={color} key={index} id={index} onChangen={ this.handleChange}>
+                                </ColorPeg>
+                            })}
+                        </div>
+                        <div className='Pallets' onClick={this.handlePickColor}>
+                            {this.state.p2.map((color, index) => {
+                                return <ColorPeg color={color} key={index} id={index} onChangen={ this.handleChange}>
+                                </ColorPeg>
+                            })}
+                        </div>
+                        <div className='Pallets' onClick={this.handlePickColor}>
+                            {this.state.p3.map((color, index) => {
+                                return <ColorPeg color={color} key={index} id={index} onChangen={ this.handleChange}>
+                                </ColorPeg>
+                            })}
+                        </div>
+
+                </div>
             </div>
             
            

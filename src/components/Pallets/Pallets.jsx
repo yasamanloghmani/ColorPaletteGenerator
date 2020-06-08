@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import ColorPeg from '../ColorPeg/ColorPeg'
-import ColorPicker from '../ColorPicker/ColorPicker'
 import { SketchPicker, SwatchesPicker } from 'react-color';
 import './Pallets.css'
-import ReactDOM from 'react-dom'
-import reactCSS from 'reactcss'
+
 
 class Pallets extends Component{
     state = {
@@ -13,7 +11,7 @@ class Pallets extends Component{
         id : 0
     }
     
-    handleChangeComplete = (color) => {
+    handleChange = (color) => {
         this.setState({ background: color.hex });
         this.state.colors[this.state.id] = color.hex
        
@@ -32,21 +30,25 @@ class Pallets extends Component{
         return (
             <div>
                  <main>
-                    <section></section>
+                    <section>
+                    <SwatchesPicker color={ this.state.background }
+                            onChange={ this.handleChange}
+                            height='100%'
+                            
+                    ></SwatchesPicker>
+                    </section>
                     <div className='Pallets' onClick={this.handlePickColor}>
                         {this.state.colors.map((color, index) => {
-                            return <ColorPeg color={color} key={index} id={index}>{color}</ColorPeg>
+                            return <ColorPeg color={color} key={index} id={index} onChangen={ this.handleChange}>
+                            </ColorPeg>
                         })}
                     </div>
                     <section >
                     <SketchPicker
                             color={ this.state.background }
-                            onChangeComplete={ this.handleChangeComplete }
+                            onChange={ this.handleChange }
                     />
-                     <SwatchesPicker color={ this.state.background }
-                            onChangeComplete={ this.handleChangeComplete }
-                            
-                        ></SwatchesPicker>
+                    
                         
                     </section>
                 </main>

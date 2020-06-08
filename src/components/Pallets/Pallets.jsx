@@ -3,7 +3,6 @@ import ColorPeg from '../ColorPeg/ColorPeg'
 import { SketchPicker, SwatchesPicker } from 'react-color';
 import './Pallets.css'
 
-
 class Pallets extends Component{
     state = {
         background: '#f35c87',
@@ -47,9 +46,7 @@ class Pallets extends Component{
                     <SketchPicker
                             color={ this.state.background }
                             onChange={ this.handleChange }
-                    />
-                    
-                        
+                    />  
                     </section>
                 </main>
             </div>

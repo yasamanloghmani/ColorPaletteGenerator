@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import './ColorPeg.css'
 import reactCSS from 'reactcss'
-import {  HuePicker } from 'react-color';
+
 class ColorPeg extends Component{
+    state = {
+        value: '',
+        copied: false,
+      };
     showHuePicker = (e) => {
         const target = e.target
         const huePicker = target.querySelector('p')
@@ -30,7 +35,13 @@ class ColorPeg extends Component{
                    <p className='colorCode'>
                        {this.props.color}
                    </p>
+                   <div value={this.state.value}
+          onChange={({target: {value}}) => this.setState({value, copied: false})}>Copy from here</div>
                </div>
+               <CopyToClipboard text={this.state.value}
+          onCopy={() => this.setState({copied: true})}>
+          <span>Copy to clipboard with span</span>
+        </CopyToClipboard>
             </div>
         );
     }

@@ -11,8 +11,10 @@
     "node-vibrant": "^3.1.5",
     "react": "^16.13.1",
     "react-color": "^2.18.1",
+    "react-color-extractor": "^1.1.2",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
+    "react-images-upload": "^1.2.8",
     "react-palette": "^1.0.2",
     "react-scripts": "3.4.1",
     "reactcss": "^1.2.3"

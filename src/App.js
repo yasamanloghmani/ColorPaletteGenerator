@@ -15,7 +15,7 @@ class App extends Component {
       <div className='App'>
         <header>
           <h1>
-            Little Cute
+            cute colors
           </h1>
         </header>
         

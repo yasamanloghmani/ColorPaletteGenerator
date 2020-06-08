@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ColorPaletteGenerator/static/css/main.a176199d.chunk.css",
-    "main.js": "/ColorPaletteGenerator/static/js/main.cc45bf16.chunk.js",
-    "main.js.map": "/ColorPaletteGenerator/static/js/main.cc45bf16.chunk.js.map",
+    "main.css": "/ColorPaletteGenerator/static/css/main.a54eb9aa.chunk.css",
+    "main.js": "/ColorPaletteGenerator/static/js/main.efc088f8.chunk.js",
+    "main.js.map": "/ColorPaletteGenerator/static/js/main.efc088f8.chunk.js.map",
     "runtime-main.js": "/ColorPaletteGenerator/static/js/runtime-main.9f671192.js",
     "runtime-main.js.map": "/ColorPaletteGenerator/static/js/runtime-main.9f671192.js.map",
     "static/js/2.0d9320d3.chunk.js": "/ColorPaletteGenerator/static/js/2.0d9320d3.chunk.js",
     "static/js/2.0d9320d3.chunk.js.map": "/ColorPaletteGenerator/static/js/2.0d9320d3.chunk.js.map",
     "index.html": "/ColorPaletteGenerator/index.html",
-    "precache-manifest.ee95afb5202521b0671571d070bf0f51.js": "/ColorPaletteGenerator/precache-manifest.ee95afb5202521b0671571d070bf0f51.js",
+    "precache-manifest.1b4ca593abee2f489e4569c1e7dbcd08.js": "/ColorPaletteGenerator/precache-manifest.1b4ca593abee2f489e4569c1e7dbcd08.js",
     "service-worker.js": "/ColorPaletteGenerator/service-worker.js",
-    "static/css/main.a176199d.chunk.css.map": "/ColorPaletteGenerator/static/css/main.a176199d.chunk.css.map",
+    "static/css/main.a54eb9aa.chunk.css.map": "/ColorPaletteGenerator/static/css/main.a54eb9aa.chunk.css.map",
     "static/js/2.0d9320d3.chunk.js.LICENSE.txt": "/ColorPaletteGenerator/static/js/2.0d9320d3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9f671192.js",
     "static/js/2.0d9320d3.chunk.js",
-    "static/css/main.a176199d.chunk.css",
-    "static/js/main.cc45bf16.chunk.js"
+    "static/css/main.a54eb9aa.chunk.css",
+    "static/js/main.efc088f8.chunk.js"
   ]
 }

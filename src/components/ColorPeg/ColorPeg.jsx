@@ -22,18 +22,11 @@ class ColorPeg extends Component{
                     boxShadow: '0 2px 4px rgba(0,0,0,.15)',
 
                   },
-                  title: {
-                    fontSize: '2.8rem',
-                    color: 'red',
-                  },
-                  picker: {
-                      margin: '10px auto',
-                  }
                 },
               })
         return (
             <div className='ColorPeg' style={styles.card} id={this.props.id} onMouseOver={this.showHuePicker}  onMouseOut={this.hideHuePicker} >
-               <div>
+               <div className='pContainer'>
                    <p className='colorCode'>
                        {this.props.color}
                    </p>

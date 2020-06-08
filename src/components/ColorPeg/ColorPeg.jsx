@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+
 import './ColorPeg.css'
 import reactCSS from 'reactcss'
 
@@ -35,13 +35,8 @@ class ColorPeg extends Component{
                    <p className='colorCode'>
                        {this.props.color}
                    </p>
-                   <div value={this.state.value}
-          onChange={({target: {value}}) => this.setState({value, copied: false})}>Copy from here</div>
-               </div>
-               <CopyToClipboard text={this.state.value}
-          onCopy={() => this.setState({copied: true})}>
-          <span>Copy to clipboard with span</span>
-        </CopyToClipboard>
+                   </div>
+               
             </div>
         );
     }

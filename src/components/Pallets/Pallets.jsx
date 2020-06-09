@@ -96,12 +96,11 @@ class Pallets extends Component{
                             
 
                     /> 
-                    
-                    
                     </section>
                 </main>
-                <div>
-                    <h1>Some famouse Pallets</h1>
+                <h1>Some famouse Pallets</h1>
+                <div className='palletEX'>
+                    
                     <div className='Pallets' onClick={this.handlePickColor}>
                             {this.state.p1.map((color, index) => {
                                 return <ColorPeg color={color} key={index} id={index} onChangen={ this.handleChange}>

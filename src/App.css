@@ -2,8 +2,6 @@
 
 .App {
   text-align: center;
-  font-family: 'Piedra', cursive;
-
 }
 
 main{
@@ -17,6 +15,7 @@ header{
     background: rgb(255, 255, 255);
     margin-bottom: 10px;
     height: 80px;
+    
 
 }
 header > h1 {
@@ -29,3 +28,13 @@ header > h1 {
   float: left;
 }
 
+ul {
+  float: right;
+  margin-top:30px;
+}
+
+a {
+  font-size: 20px;
+  margin: 30px;
+  text-decoration: none;
+}

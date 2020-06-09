@@ -92,6 +92,7 @@ class Pallets extends Component{
                             color={ this.state.background }
                             onChange={ this.handleChange }
                             height='250px'
+                            disableAlpha='false'
                             
 
                     /> 

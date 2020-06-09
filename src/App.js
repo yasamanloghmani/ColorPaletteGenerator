@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-// import ReactDOM from 'react-dom'
-
 import './App.css'
-import { Swatch } from 'node-vibrant/lib/color';
-import reactCSS from 'reactcss'
+import {Link} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Pallets from './components/Pallets/Pallets'
+import Schema from './components/Schema/Schema'
 
 class App extends Component {
  
@@ -17,10 +16,16 @@ class App extends Component {
           <h1>
             cute colors
           </h1>
+          <ul>
+            <Link to='/ColorPaletteGenerator'>Create Color Schema</Link>
+            <Link to='/ColorPaletteGenerator/pallet'>Create Yout Pallet</Link>
+            </ul>
         </header>
-        
-      <Pallets/>
-      
+        <Switch>
+          <Route exact path='/ColorPaletteGenerator' render={() => <Schema></Schema>} />
+          <Route exact path='/ColorPaletteGenerator/pallet' render={() => <Pallets></Pallets>} /> 
+        </Switch>
+    
       </div>
       
     );

@@ -17,6 +17,7 @@
     "react-eyedropper": "0.0.10",
     "react-images-upload": "^1.2.8",
     "react-palette": "^1.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "reactcss": "^1.2.3"
   },

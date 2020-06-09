@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ColorPeg from '../ColorPeg/ColorPeg'
-import { SketchPicker, SwatchesPicker, MaterialPicker } from 'react-color';
+import { SwatchesPicker, MaterialPicker, ChromePicker, GithubPicker } from 'react-color';
 import './Pallets.css'
 import ImageUploader from 'react-images-upload';
 
@@ -15,7 +15,7 @@ class Pallets extends Component{
            
              pictures: '',
              background: '#f35c87',
-        colors : ['#845EC2', '#845EC2', '#FF9671', '#FFC75F', '#B39CD0', '#00C9A7'],
+        colors : ['#D4295A', '#845EC2', '#FF9671', '#FFC75F', '#B39CD0', '#00C9A7'],
         id : 0,
         p1 : ['#845EC2', '#EDC0FF','#7652B4', '#08004F', '#07226F' , '#1DC0FF'],
         p2 : ['#356275', '#98AFBA','#657A85', '#6E546C', '#08A1BA', '#A56875' ],
@@ -55,7 +55,7 @@ class Pallets extends Component{
                     <section>
                     <SwatchesPicker color={ this.state.background }
                             onChange={ this.handleChange}
-                            height='100%'
+                            height='240px'
                             
                     ></SwatchesPicker>
                     
@@ -67,6 +67,11 @@ class Pallets extends Component{
                                 </ColorPeg>
                             })}
                         </div>
+                        <GithubPicker color={ this.state.background }
+                            onChange={ this.handleChange }
+                            width='200px'
+                            className='marg'
+                            />
                         {/* <ImageUploader
                         className='uploader'
                 withIcon={true}
@@ -83,18 +88,14 @@ class Pallets extends Component{
                     </div>
                     
                     <section >
-                    <SketchPicker
+                    <ChromePicker
                             color={ this.state.background }
                             onChange={ this.handleChange }
-                            width='60%'
+                            height='250px'
+                            
 
                     /> 
-                    <div className='marg'>
-                    <MaterialPicker color={ this.state.background }
-                            onChange={ this.handleChange }
-                            
-                    ></MaterialPicker> 
-                    </div>
+                    
                     
                     </section>
                 </main>

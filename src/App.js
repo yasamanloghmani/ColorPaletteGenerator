@@ -17,7 +17,6 @@ class App extends Component {
           <h1>
             cute colors
           </h1>
-          
         </header>
         
       <Pallets/>

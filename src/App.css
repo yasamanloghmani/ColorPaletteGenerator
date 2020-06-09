@@ -2,8 +2,6 @@
 
 .App {
   text-align: center;
-  display: grid;
-  grid-template-rows: 10% 90%;
   font-family: 'Piedra', cursive;
 
 }
@@ -18,12 +16,13 @@ header{
     border-radius: 3px;
     background: rgb(255, 255, 255);
     margin-bottom: 10px;
+    height: 80px;
 
 }
 header > h1 {
   
-  font-size: 60px;
-  background: -webkit-linear-gradient(#e8b6f1,#f34795, #7ef0e1, #5db6c9);
+  font-size: 40px;
+  background: -webkit-linear-gradient(#FF9671,#F06292,#F44336, #F35C87);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin:10px;

@@ -17,9 +17,9 @@ class Pallets extends Component{
              background: '#f35c87',
         colors : ['#D4295A', '#845EC2', '#FF9671', '#FFC75F', '#B39CD0', '#00C9A7'],
         id : 0,
-        p1 : ['#845EC2', '#EDC0FF','#7652B4', '#08004F', '#07226F' , '#1DC0FF'],
-        p2 : ['#356275', '#98AFBA','#657A85', '#6E546C', '#08A1BA', '#A56875' ],
-        p3 : ['#8F4454', '#7E4564','#66486C', '#4E4A6C', '#00486C', '#1E406C' ],
+        p1 : ['#feda75', '#fa7e1e','#d62976', '#962fbf', '#4f5bd5' , '#1DC0FF'],
+        p2 : ['#007777', '#006666','#005555', '#004444', '#003333', '#002222'],
+        p3 : ['	#ffd4e5', '#d4ffea','#eecbff', '#feffa3', '#dbdcff', '#FFCCBC' ],
              };
              
         this.onDrop = this.onDrop.bind(this);

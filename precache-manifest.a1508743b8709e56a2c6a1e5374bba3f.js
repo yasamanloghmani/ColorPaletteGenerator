@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55e9f10ada8f8392b79bb64628fdb10e",
+    "revision": "d3ae0968e6a0d0176cdf283420bae502",
     "url": "/ColorPaletteGenerator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ColorPaletteGenerator/static/css/2.2ce93ba3.chunk.css"
   },
   {
-    "revision": "992f405c7c44ad7fb1ce",
+    "revision": "e83ec003016fd9496137",
     "url": "/ColorPaletteGenerator/static/css/main.6800271b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ColorPaletteGenerator/static/js/2.790fa888.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "992f405c7c44ad7fb1ce",
-    "url": "/ColorPaletteGenerator/static/js/main.c867669e.chunk.js"
+    "revision": "e83ec003016fd9496137",
+    "url": "/ColorPaletteGenerator/static/js/main.eb77cac7.chunk.js"
   },
   {
     "revision": "1370fc96ecae13d3f30d",

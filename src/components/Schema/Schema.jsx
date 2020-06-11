@@ -1,10 +1,36 @@
 import React from "react";
 import Colors from "./Colors";
-// import "./Palette.css";
+import { Navbar, Form, Nav, FormControl, NavDropdown } from "react-bootstrap";
 
 const tinycolor = require("tinycolor2");
 
-export default function Palette({ hex, variation, setting, settingValue }) {
+export default function Palette({ hex, variation, setting, settingValue, changeHex,
+    changeVariation,
+    changeSetting,
+    changeSettingValue }) {
+        const handleHexChange = e => {
+          e.preventDefault();
+          changeHex(e.target.value);
+        };
+      
+        const handleVariationChange = variation => {
+          changeVariation(variation);
+        };
+      
+        const changeSettings = e => {
+          const setting = e.target.getAttribute("value");
+          changeSetting(setting);
+        };
+      
+        const setRandom = () => {
+          const randomColor = tinycolor.random().toHexString();
+          changeHex(randomColor);
+        };
+      
+        const handleSettingValueChange = e => {
+          changeSettingValue(e);
+        };
+      
   let colors;
   // Using a switch to set variation type set
   switch (variation) {
@@ -59,5 +85,76 @@ export default function Palette({ hex, variation, setting, settingValue }) {
     });
   }
 
-  return <div id="container">{colorPalette}</div>;
+  return(
+      <main>
+          <div>
+      <Navbar expand="lg" bg="dark" variant="dark">
+        <Nav className="mr-auto">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Navbar.Brand>Color Palette Generator</Navbar.Brand>
+            <NavDropdown
+              onSelect={e => handleVariationChange(e)}
+              title="Variation"
+              id="variation"
+            >
+              <NavDropdown.Item eventKey="analogous">
+                Analogous
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+
+              <NavDropdown.Item eventKey="monochromatic">
+                Monochromatic
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+
+              <NavDropdown.Item eventKey="complement">
+                Complement
+              </NavDropdown.Item>
+              <NavDropdown.Item eventKey="splitcomplement">
+                Split Complement
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item eventKey="triad">Triad</NavDropdown.Item>
+              <NavDropdown.Item eventKey="tetrad">Tetrad</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown.Divider />
+
+            <Nav.Link
+              value={"lighten"}
+              eventKey={"lighten"}
+              onClick={e => changeSettings(e)}
+            >
+              Lighten
+            </Nav.Link>
+            <Nav.Link value={"brighten"} onClick={e => changeSettings(e)}>
+              Brighten
+            </Nav.Link>
+            <Nav.Link value={"darken"} onClick={e => changeSettings(e)}>
+              Darken
+            </Nav.Link>
+            <Nav.Link value={"desaturate"} onClick={e => changeSettings(e)}>
+              Desaturate
+            </Nav.Link>
+            <Nav.Link value={"saturate"} onClick={e => changeSettings(e)}>
+              Saturate
+            </Nav.Link>
+            <Nav.Link value={"greyscale"} onClick={e => changeSettings(e)}>
+              Greyscale
+            </Nav.Link>
+          </Navbar.Collapse>
+        </Nav>
+        <Nav.Link id="random" onClick={() => setRandom()}>
+          Random
+        </Nav.Link>
+        <Form onChange={e => handleHexChange(e)} inline>
+          <FormControl type="text" placeholder="#77d36a" className="mr-sm-2" />
+        </Form>
+      </Navbar>
+    </div>
+          <div className='Pallets'>{colorPalette}</div>
+      </main>
+  
+  ) 
 }

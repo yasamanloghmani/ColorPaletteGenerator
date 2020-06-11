@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
+import React,{ useState } from 'react'
 import './App.css'
 import {Link} from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 import Pallets from './components/Pallets/Pallets'
 import Schema from './components/Schema/Schema'
 
-class App extends Component {
- 
-
-  render() {
+function App() {
+  const [hex, changeHex] = useState("#5f42ad");
+  const [variation, changeVariation] = useState("analogous");
+  const [setting, changeSetting] = useState();
+  const [settingValue, changeSettingValue] = useState(20);
    
     return (
       <div className='App'>
@@ -22,14 +23,20 @@ class App extends Component {
             </ul>
         </header>
         <Switch>
-          <Route exact path='/ColorPaletteGenerator' render={() => <Schema></Schema>} />
+          <Route exact path='/ColorPaletteGenerator' render={() =>
+              <Schema
+                settingValue={settingValue}
+                setting={setting}
+                variation={variation}
+                hex={hex}
+              />} />
           <Route exact path='/ColorPaletteGenerator/pallet' render={() => <Pallets></Pallets>} /> 
         </Switch>
     
       </div>
       
-    );
-}
+    )
+
 }
 
 export default App

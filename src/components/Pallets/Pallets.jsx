@@ -49,7 +49,7 @@ class Pallets extends Component{
             <div>
                 <section className='headerbg'>
                     <p>
-                        Change each peg's color by clicking to built your new pallete.
+                        Change each peg's color by clicking to built your new palette.
                     </p>
                 </section>
                  <main>
@@ -101,7 +101,7 @@ class Pallets extends Component{
                 </main>
                 <section className='headerbg'>
                     <p>
-                        Famouse Pallets.
+                        Famouse Palettes.
                     </p>
                 </section>
                 <div className='palletEX'>

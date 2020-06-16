@@ -35,6 +35,34 @@ ul {
 
 a {
   font-size: 20px;
-  margin: 30px;
+  margin: 20px;
   text-decoration: none;
+}
+
+
+.navbar, .nav-link{
+  padding: 0px;
+}
+
+.headerbg {
+  background-color: #f8f9fa;
+  height: 70px;
+  font-size: 20px;
+  color: rgba(0,0,0,.5);
+  position: relative
+ 
+}
+.headerbg > p {
+  margin: 0px;
+  position: absolute;             
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+@media (min-width: 992px){
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0px;
+  }
 }

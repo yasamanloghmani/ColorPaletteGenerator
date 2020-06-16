@@ -2,36 +2,33 @@ import React from "react";
 import Colors from "./Colors";
 import { Navbar, Form, Nav, FormControl, NavDropdown } from "react-bootstrap";
 
+
 const tinycolor = require("tinycolor2");
 
 export default function Palette({ hex, variation, setting, settingValue, changeHex,
-    changeVariation,
-    changeSetting,
-    changeSettingValue }) {
-        const handleHexChange = e => {
-          e.preventDefault();
-          changeHex(e.target.value);
-        };
-      
-        const handleVariationChange = variation => {
-          changeVariation(variation);
-        };
-      
-        const changeSettings = e => {
-          const setting = e.target.getAttribute("value");
-          changeSetting(setting);
-        };
-      
-        const setRandom = () => {
-          const randomColor = tinycolor.random().toHexString();
-          changeHex(randomColor);
-        };
-      
-        const handleSettingValueChange = e => {
-          changeSettingValue(e);
-        };
-      
-  let colors;
+    changeVariation, changeSetting, changeSettingValue }) {
+    // Setting handler
+    const handleHexChange = e => {
+        e.preventDefault();
+        changeHex(e.target.value);
+    };
+    
+    const handleVariationChange = variation => {
+        changeVariation(variation);
+    };
+    
+    const changeSettings = e => {
+        const setting = e.target.getAttribute("value");
+        changeSetting(setting);
+    };
+    
+    const setRandom = () => {
+        const randomColor = tinycolor.random().toHexString();
+        changeHex(randomColor);
+    };
+
+    //  Schema colors handler 
+    let colors;
   // Using a switch to set variation type set
   switch (variation) {
     case "tetrad":
@@ -86,14 +83,12 @@ export default function Palette({ hex, variation, setting, settingValue, changeH
   }
 
   return(
-      <main>
-          <div>
-      <Navbar expand="lg" bg="dark" variant="dark">
+      <section>
+        <div>
+        <Navbar expand="lg" bg="light" variant="light">
         <Nav className="mr-auto">
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Navbar.Brand>Color Palette Generator</Navbar.Brand>
             <NavDropdown
               onSelect={e => handleVariationChange(e)}
               title="Variation"
@@ -102,20 +97,13 @@ export default function Palette({ hex, variation, setting, settingValue, changeH
               <NavDropdown.Item eventKey="analogous">
                 Analogous
               </NavDropdown.Item>
-              <NavDropdown.Divider />
-
               <NavDropdown.Item eventKey="monochromatic">
                 Monochromatic
               </NavDropdown.Item>
-              <NavDropdown.Divider />
 
-              <NavDropdown.Item eventKey="complement">
-                Complement
-              </NavDropdown.Item>
               <NavDropdown.Item eventKey="splitcomplement">
                 Split Complement
               </NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item eventKey="triad">Triad</NavDropdown.Item>
               <NavDropdown.Item eventKey="tetrad">Tetrad</NavDropdown.Item>
             </NavDropdown>
@@ -143,18 +131,25 @@ export default function Palette({ hex, variation, setting, settingValue, changeH
             <Nav.Link value={"greyscale"} onClick={e => changeSettings(e)}>
               Greyscale
             </Nav.Link>
+            <Nav.Link id="random" onClick={() => setRandom()}>
+                Random
+            </Nav.Link>
           </Navbar.Collapse>
         </Nav>
-        <Nav.Link id="random" onClick={() => setRandom()}>
-          Random
-        </Nav.Link>
+        
         <Form onChange={e => handleHexChange(e)} inline>
           <FormControl type="text" placeholder="#77d36a" className="mr-sm-2" />
         </Form>
       </Navbar>
-    </div>
-          <div className='Pallets'>{colorPalette}</div>
-      </main>
+        </div>
+        <main>
+            <div></div>
+            <div className='Pallets'>{colorPalette}</div>
+            <div></div>
+        </main>
+        
+
+      </section>
   
   ) 
 }

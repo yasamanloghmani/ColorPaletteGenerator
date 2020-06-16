@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import ColorPeg from '../ColorPeg/ColorPeg'
 import { SwatchesPicker, MaterialPicker, ChromePicker, GithubPicker } from 'react-color';
 import './Pallets.css'
-import ImageUploader from 'react-images-upload';
-
-
-
-
+// import ImageUploader from 'react-images-upload';
 
 class Pallets extends Component{
     constructor(props) {
@@ -51,6 +47,11 @@ class Pallets extends Component{
           
         return (
             <div>
+                <section className='headerbg'>
+                    <p>
+                        Change each peg's color by clicking to built your new pallete.
+                    </p>
+                </section>
                  <main>
                     <section>
                     <SwatchesPicker color={ this.state.background }
@@ -98,7 +99,11 @@ class Pallets extends Component{
                     /> 
                     </section>
                 </main>
-                <h1>Some famouse Pallets</h1>
+                <section className='headerbg'>
+                    <p>
+                        Famouse Pallets.
+                    </p>
+                </section>
                 <div className='palletEX'>
                     
                     <div className='Pallets' onClick={this.handlePickColor}>

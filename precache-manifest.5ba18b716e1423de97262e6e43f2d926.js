@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1dbafb87f0f76bcbb9c4869ebd44d4a",
+    "revision": "d00a2ee02dd99b6d2cac591c162bb199",
     "url": "/ColorPaletteGenerator/index.html"
   },
   {

@@ -27,7 +27,12 @@ header > h1 {
   margin:10px;
   float: left;
 }
-
+header > img {
+  float: right;
+  width:60px;
+  height: auto;
+  margin:10px;
+}
 ul {
   float: right;
   margin-top:30px;

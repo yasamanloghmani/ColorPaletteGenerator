@@ -2,6 +2,7 @@ import React,{ useState } from 'react'
 import './App.css'
 import Pallets from './components/Pallets/Pallets'
 import Schema from './components/Schema/Schema'
+import logo from './cl.png'
 
 function App() {
   const [hex, changeHex] = useState("#F44336");
@@ -15,6 +16,7 @@ function App() {
           <h1>
             cute colors
           </h1>
+          <img src={logo} className/>
         </header>
 
               <Schema
@@ -28,7 +30,9 @@ function App() {
                 changeSettingValue={changeSettingValue}
               />
           <Pallets></Pallets>
-
+          <footer className='headerbg'>
+            <p>Build by<a href='https://yasamanloghmani.com'>YasamanLoghmani</a></p>
+          </footer>
     
       </div>
       

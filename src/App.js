@@ -31,7 +31,7 @@ function App() {
               />
           <Pallets></Pallets>
           <footer className='headerbg'>
-            <p>Build by<a href='https://yasamanloghmani.com'>YasamanLoghmani</a></p>
+            <p>Built by<a href='https://yasamanloghmani.com'>YasamanLoghmani</a></p>
           </footer>
     
       </div>

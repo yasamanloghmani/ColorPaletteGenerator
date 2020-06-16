@@ -4,7 +4,7 @@ import Pallets from './components/Pallets/Pallets'
 import Schema from './components/Schema/Schema'
 
 function App() {
-  const [hex, changeHex] = useState("#F35C87");
+  const [hex, changeHex] = useState("#F44336");
   const [variation, changeVariation] = useState("analogous");
   const [setting, changeSetting] = useState();
   const [settingValue, changeSettingValue] = useState(20);

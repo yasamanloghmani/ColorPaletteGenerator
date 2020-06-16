@@ -71,14 +71,14 @@ export default function Palette({ hex, variation, setting, settingValue, changeH
 
   let colorPalette;
   if (!Array.isArray(colors)) {
-    return <Colors hex={colors} />;
+    return <Colors hex={colors} className='ColorPeg' />;
   } else {
     colorPalette = colors.map(t => {
       let hexColor = t.toHexString();
 
       hexColor = settings(hexColor);
 
-      return <Colors hex={hexColor} />;
+      return <Colors hex={hexColor} className='ColorPeg'/>;
     });
   }
 
@@ -144,7 +144,10 @@ export default function Palette({ hex, variation, setting, settingValue, changeH
         </div>
         <main>
             <div></div>
-            <div className='Pallets'>{colorPalette}</div>
+            <div className='sections'>
+              <div className='Pallets'>{colorPalette}</div>
+            </div>
+            
             <div></div>
         </main>
         

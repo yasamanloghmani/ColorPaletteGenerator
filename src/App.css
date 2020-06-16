@@ -60,6 +60,8 @@ a {
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
+
+
 @media (min-width: 992px){
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -69,7 +71,26 @@ a {
 
 @media (max-width: 990px) {
 
-  main, .palletEX {
+  main{
     display: block;
   }
+  .palletEX {
+    display:block
 }
+
+  .swatches{
+    display: none;
+  }
+
+
+  
+
+}
+
+@media (max-width: 630px) {
+  .pContainerRotat{
+    font-size:7px;
+  }
+
+}
+

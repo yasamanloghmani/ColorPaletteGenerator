@@ -57,7 +57,7 @@ class Pallets extends Component{
                     <SwatchesPicker color={ this.state.background }
                             onChange={ this.handleChange}
                             height='240px'
-                            
+                            className='swatches'
                     ></SwatchesPicker>
                     
                     </section>
@@ -94,7 +94,7 @@ class Pallets extends Component{
                             onChange={ this.handleChange }
                             height='250px'
                             disableAlpha='false'
-                            
+                            className='margin'
 
                     /> 
                     </section>

@@ -17,7 +17,7 @@ I was thinking to create a cool and useful project. UI is one of the most import
 
 ![second](https://imgur.com/27c2smR.png)
 
-![Responsive] (https://imgur.com/GAx9e9p.png)
+![Responsive](https://imgur.com/GAx9e9p.png)
 
 
 
